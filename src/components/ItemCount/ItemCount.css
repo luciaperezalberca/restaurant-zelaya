@@ -1,0 +1,41 @@
+.Counter .Controls{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        color: #a7946c;
+}
+
+.Counter .Controls .Button, .ButtonNumber{
+        border: 2px solid #a7946c;
+        background-color: transparent;
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        color: #a7946c;
+        font-weight: bold;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+}
+
+.ButtonNumber{
+        border: none;
+}
+
+.Counter .Controls .Button:hover{
+        background-color: #242424;
+        cursor: pointer;
+}
+
+.ButtonAdd{
+        background-color: #a7946c;
+        padding: 0.8rem 1.5rem;
+        border-radius: 2rem;
+        border: none;
+        letter-spacing: 0.1rem;
+        color: whitesmoke;
+}
+
+.ButtonAdd:hover{
+        cursor: pointer;
+        opacity: 85%;
+}

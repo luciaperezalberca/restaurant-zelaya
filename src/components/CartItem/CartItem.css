@@ -1,0 +1,28 @@
+.nameCartItem {
+        font-weight: 400;
+        color: #a7946c;
+        margin-right: 2rem;
+        font-size: 1.1rem;
+}
+
+.CartItem {
+        background-color: #a7946c12;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        color: whitesmoke;
+}
+
+.iconRemove {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        width: 6rem;
+        color: #a7946c;
+        cursor: pointer;
+}

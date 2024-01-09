@@ -1,0 +1,10 @@
+.greetingStyle{
+        text-align: center;
+        color: whitesmoke;
+        font-weight: 400;
+        letter-spacing: 0.1rem;
+        font-size: 1.8rem;
+        background-color: #a7946c27;
+        padding: 1rem;
+        margin-bottom: 2rem;
+}

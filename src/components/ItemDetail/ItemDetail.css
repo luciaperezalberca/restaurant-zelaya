@@ -1,0 +1,54 @@
+.CardItemDetail {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.CardItemDetail .HeaderCardDetail{
+        margin-bottom: 2rem;
+        color: #a7946c;
+}
+
+.CardItemDetail picture{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.ItemImgDetail{
+        width: 50%;
+        border-radius: 0.5rem;
+}
+
+.CardItemDetail section{
+        margin: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 2rem;
+        letter-spacing: 0.2rem;
+}
+
+.CardItemDetail section .InfoDetail{
+        width: 60%;
+        text-align: center;
+        color: #a7946c;
+}
+
+.CardItemDetail section .InfoCategoryDetail{
+        color: whitesmoke;
+        font-size: 0.9rem;
+        margin-top: 1rem;
+}
+
+.buttonOrder {
+        background-color: #a7946c;
+        padding: 0.8rem 1.5rem;
+        border-radius: 2rem;
+        border: none;
+        letter-spacing: 0.1rem;
+        color: whitesmoke;
+        font-size: 0.9rem;
+}

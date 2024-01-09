@@ -1,0 +1,18 @@
+.notFound {
+        display: flex;
+        color: whitesmoke;
+        text-align: center;
+        justify-content: center;
+        gap: 4rem;
+        margin-top: 4rem;
+}
+
+.arrowBack {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        background-color: #a7946c;
+        border-radius: 4rem;
+        width: 3%;
+}

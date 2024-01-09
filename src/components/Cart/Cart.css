@@ -1,0 +1,46 @@
+.containerCheckout {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin: 3rem;
+}
+
+.checkout {
+        background-color: #a7946cdd;
+        padding: 1rem 1.5rem;
+        letter-spacing: 0.1rem;
+        border-radius: 2rem;
+        color: whitesmoke;
+        font-size: 0.9rem;
+}
+
+.vaciarCarrito {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 0.9rem;
+        cursor: pointer;
+        letter-spacing: 0.1rem;
+}
+
+.totalCart {
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 2rem;
+        color: #a7946c;
+        margin-top: 3rem;
+}
+
+.emptyCart {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: whitesmoke;
+        margin-top: 3rem;
+        gap: 3rem;
+}
+
+.textBack {
+        color: #a7946c;
+}

@@ -1,0 +1,14 @@
+.iconCart {
+        font-size: 1.8rem;
+        color: #a7946c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        width: 6rem;
+        margin-left: 2rem;
+}
+
+.NumberCart{
+        font-size: 1rem;
+}
