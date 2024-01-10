@@ -1,4 +1,4 @@
-import { RiDeleteBin6Line } from "react-icons/ri";
+import { RiDeleteBin6Line } from "react-icons/ri"
 import { useContext } from "react"
 import { CartContext } from "../Context/CartContext"
 import './CartItem.css'

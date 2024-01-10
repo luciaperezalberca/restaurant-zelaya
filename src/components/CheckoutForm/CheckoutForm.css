@@ -6,7 +6,6 @@
         align-items: center;
         gap: 2rem;
         padding: 2rem;
-        border-radius: 2rem;
 }
 
 .labelCheckout {
@@ -18,7 +17,6 @@
 
 .inputCheckout {
         border: none;
-        border-radius: 2rem;
         padding: 0.2rem;
         background-color: #a7946c38;
         color: whitesmoke;
@@ -26,6 +24,11 @@
         font-size: 0.8rem;
         letter-spacing: 0.1rem;
         width: 18rem;
+        border-radius: 0.5rem;
+}
+
+.inputCheckout::placeholder {
+        opacity: 30%;
 }
 
 .btnCheckout {
@@ -33,6 +36,5 @@
         padding: 0.8rem 1.5rem;
         background-color: #a7946c;
         color: whitesmoke;
-        border-radius: 2rem;
         letter-spacing: 0.1rem;
 }

@@ -2,7 +2,7 @@ import { useContext, useState } from 'react'
 import { db } from '../../firebase/Config'
 import CheckoutForm from '../CheckoutForm/CheckoutForm'
 import { CartContext } from '../Context/CartContext'
-import { Timestamp, collection, documentId, getDocs, query, where, addDoc, writeBatch } from 'firebase/firestore'
+import { collection, documentId, getDocs, query, where, addDoc, writeBatch } from 'firebase/firestore'
 import './Checkout.css'
 
 const Checkout = () => {
@@ -10,41 +10,35 @@ const Checkout = () => {
         const [orderId, setOrderId] = useState('')
 
         const { cart, totalPrice, clearCart } = useContext(CartContext)
-
-        const createOrder = async ({ surname, phone, email }) => {
+ 
+        const createOrder = async ({ name, phone, email }) => {
                 setLoading(true)
 
                 try {
                         const objOrder = {
                                 buyer: {
-                                        surname, phone, email
-                                }, 
+                                        name, phone, email
+                                },
                                 items: cart,
-                                total: totalPrice,
-                                date: Timestamp.fromDate(new Date())
+                                total: totalPrice(),
                         }
 
                         const batch = writeBatch(db)
-
                         const outOfStock = []
-
-                        const ids = cart.map(prod => prod.id)
-
+                        const ids = cart.map(item => item.id)
                         const itemsRef = collection(db, 'items')
-
                         const itemsAddedFromFirestore = await getDocs(query(itemsRef, where(documentId(), 'in', ids )))
-                
                         const { docs } = itemsAddedFromFirestore
 
                         docs.forEach(doc => {
                                 const dataDoc = doc.data()
                                 const stockDb = dataDoc.stock
 
-                                const itemAddedToCart = cart.find(prod => prod.id === doc.id)
-                                const prodQuantity = itemAddedToCart?.quantity
+                                const itemAddedToCart = cart.find(item => item.id === doc.id)
+                                const itemQuantity = itemAddedToCart?.quantity
 
-                                if(stockDb >= prodQuantity) {
-                                        batch.update(doc.ref, { stock: stockDb - prodQuantity })
+                                if(stockDb >= itemQuantity) {
+                                        batch.update(doc.ref, { stock: stockDb - itemQuantity })
                                 } else {
                                         outOfStock.push({ id: doc.id, ...dataDoc})
                                 }
@@ -54,34 +48,30 @@ const Checkout = () => {
                                 await batch.commit()
 
                                 const orderRef = collection(db, 'orders')
-
                                 const orderAdded = await addDoc(orderRef, objOrder)
 
                                 setOrderId(orderAdded.id)
                                 clearCart()
                         } else {
-                                console.error('Hay productos que estan fuera de stock')
+                                console.log('Hay productos que estan fuera de stock')
                         }
 
                 } catch (error) {
                         console.log(error)
-                } finally {
-                        setLoading(false)
                 }
         }
 
         if (loading) {
-                return <h1> Se esta generando su orden... </h1>
-        }
-
-        if (orderId) {
-                return <h1> El Id de su orden es: {orderId} </h1>
+                return (
+                //<h1 className='titleCheckout'> Se esta generando su orden... </h1>
+                <h1 className='titleCheckout'> El Id de su orden es: {orderId} </h1> 
+                )
         }
 
         return (
                 <div>
                         <h1 className='titleCheckout'> Generar orden de pedido </h1>
-                        <CheckoutForm onConfirm={createOrder}/>
+                        <CheckoutForm onConfirm={createOrder} />
                 </div>
         )
 }

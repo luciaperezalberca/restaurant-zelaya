@@ -5,7 +5,7 @@
         align-items: center;
 }
 
-.CardItemDetail .HeaderCardDetail{
+.HeaderCardDetail{
         margin-bottom: 2rem;
         color: #a7946c;
 }
@@ -31,13 +31,13 @@
         letter-spacing: 0.2rem;
 }
 
-.CardItemDetail section .InfoDetail{
+.InfoDetail{
         width: 60%;
         text-align: center;
         color: #a7946c;
 }
 
-.CardItemDetail section .InfoCategoryDetail{
+.InfoCategoryDetail{
         color: whitesmoke;
         font-size: 0.9rem;
         margin-top: 1rem;
@@ -46,7 +46,6 @@
 .buttonOrder {
         background-color: #a7946c;
         padding: 0.8rem 1.5rem;
-        border-radius: 2rem;
         border: none;
         letter-spacing: 0.1rem;
         color: whitesmoke;

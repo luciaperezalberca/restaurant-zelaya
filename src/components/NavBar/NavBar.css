@@ -6,20 +6,27 @@
         align-items: center;
 }
 
-.NavBar .logo{
+.logo{
         width: 60%;
 }
 
-.NavBar .Categories{
+.Categories{
         width: 100%;
         display: flex;
         justify-content: end;
         align-items: center;
         gap: 3rem;
+        letter-spacing: 0.1rem;
 }
 
-.NavBar .Categories a:hover{
-        border: 2px solid #a7946c;
-        border-radius: 2rem;
-        padding: 0rem 0.8rem;
+.Categories a:hover{
+        border-bottom: 1px solid #a7946cba;
+}
+
+.ActiveOption {
+        border-bottom: 1px solid #a7946c;
+}
+
+.Option {
+        border: none;
 }

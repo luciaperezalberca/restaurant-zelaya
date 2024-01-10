@@ -3,9 +3,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 1.5rem;
+        margin-bottom: 3rem;
 }
 
-.CardItem .ItemHeader{
+.ItemHeader{
         color: #a7946c;
         text-align: center;
         font-weight: 200;
@@ -14,34 +16,28 @@
         margin-bottom: 1rem;
 }
 
-.CardItem picture .ItemImg{
+.ItemImg{
         width: 100%;
         border-radius: 0.5rem;
         margin-bottom: 1.2rem;
 }
 
-.CardItem section .InfoPrice{
+.InfoPrice{
         text-align: center;
         color: whitesmoke;
 }
 
-.CardItem section .InfoStock{
+.InfoStock{
         color: #a7946c;
         font-size: 0.8rem;
         margin-top: 0.5rem;
 }
 
-.CardItem {
-        margin-top: 1.5rem;
-        margin-bottom: 3rem;
-}
-
-.CardItem .ItemFooter{
+.ItemFooter{
         background-color: #a7946c;
         margin-top: 2rem;
         color: #171717;
         padding: 0.8rem 1.5rem;
-        border-radius: 2rem;
         font-size: 0.9rem;
         letter-spacing: 0.1rem;
 }

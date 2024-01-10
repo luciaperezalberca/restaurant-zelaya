@@ -7,7 +7,7 @@
 }
 
 .Counter .Controls .Button, .ButtonNumber{
-        border: 2px solid #a7946c;
+        border: none;
         background-color: transparent;
         padding: 0.5rem 1rem;
         border-radius: 2rem;
@@ -15,10 +15,6 @@
         font-weight: bold;
         font-size: 1rem;
         margin-bottom: 1rem;
-}
-
-.ButtonNumber{
-        border: none;
 }
 
 .Counter .Controls .Button:hover{
@@ -29,7 +25,6 @@
 .ButtonAdd{
         background-color: #a7946c;
         padding: 0.8rem 1.5rem;
-        border-radius: 2rem;
         border: none;
         letter-spacing: 0.1rem;
         color: whitesmoke;
