@@ -26,3 +26,7 @@
         color: #a7946c;
         cursor: pointer;
 }
+
+.iconRemove:hover {
+        opacity: 70%;
+}

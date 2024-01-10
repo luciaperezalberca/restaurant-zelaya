@@ -51,3 +51,7 @@
         color: whitesmoke;
         font-size: 0.9rem;
 }
+
+.buttonOrder:hover {
+        opacity: 70%;
+}

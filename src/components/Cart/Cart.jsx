@@ -9,9 +9,11 @@ const Cart = () => {
 
         if (totalQuantity() === 0) {
                 return (
-                        <div className='emptyCart'>
-                                <h1> No hay items en el pedido </h1>
-                                <Link to='/' className='textBack'> Volver al Menu </Link>
+                        <div className='containerEmptyCart'>
+                                <div className='emptyCart'>
+                                        <h1> No hay items en el pedido </h1>
+                                        <Link to='/' className='textBack'> Volver al Menu </Link>
+                                </div>
                         </div>
                 )
         }

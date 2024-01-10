@@ -7,6 +7,7 @@ import Cart from './components/Cart/Cart'
 import Checkout from './components/Checkout/Checkout'
 import { CartProvider } from './components/Context/CartContext'
 import NotFound from './components/Error/NotFound'
+import Footer from './components/Footer/Footer'
 
 function App() {
   
@@ -17,13 +18,14 @@ function App() {
         <CartProvider>
           <NavBar/>
           <Routes>
-            <Route path="/" element={<ItemListContainer greeting={'Nuestro Menu'}/>}/>
+            <Route path="/" element={<ItemListContainer greeting={'Nuestro Menu - Authentic taste'}/>}/>
             <Route path="/category/:categoryId" element={<ItemListContainer greeting={'Platos por categoría'}/>}/>
             <Route path="/item/:itemId" element={<ItemDetailContainer/>}/>
             <Route path="/cart" element={<Cart/>}/>
             <Route path="/checkout" element={<Checkout/>}/>
             <Route path="*" element={<NotFound/>}/>
           </Routes>
+          <Footer/>
         </CartProvider>
       </BrowserRouter>
 

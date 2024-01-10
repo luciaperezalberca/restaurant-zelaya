@@ -4,7 +4,6 @@
         justify-content: center;
         align-items: center;
         margin-top: 1.5rem;
-        margin-bottom: 3rem;
 }
 
 .ItemHeader{
@@ -34,10 +33,16 @@
 }
 
 .ItemFooter{
-        background-color: #a7946c;
         margin-top: 2rem;
-        color: #171717;
+}
+
+.SeeDetails{
+        background-color: #a7946c;
         padding: 0.8rem 1.5rem;
         font-size: 0.9rem;
         letter-spacing: 0.1rem;
+}
+
+.SeeDetails:hover {
+        opacity: 80%;
 }

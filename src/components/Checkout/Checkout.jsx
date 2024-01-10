@@ -63,8 +63,9 @@ const Checkout = () => {
 
         if (loading) {
                 return (
-                //<h1 className='titleCheckout'> Se esta generando su orden... </h1>
-                <h1 className='titleCheckout'> El Id de su orden es: {orderId} </h1> 
+                        <div className='containerOrder'>
+                                <h1 className='titleCheckout'> El Id de su orden es: {orderId} </h1>
+                        </div>
                 )
         }
 

@@ -1,0 +1,22 @@
+.Footer {
+        background-color: #a7946c27;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30rem;
+        padding: 2rem;
+        width: 100%;
+}
+
+.adress{
+        text-align: center;
+        line-height: 2rem;
+        color: #a7946c;
+        letter-spacing: 0.1rem;
+}
+
+.socialMedia {
+        font-size: 1.5rem;
+        letter-spacing: 1.2rem;
+        color: whitesmoke;
+}

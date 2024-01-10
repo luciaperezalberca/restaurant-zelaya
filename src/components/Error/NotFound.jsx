@@ -5,9 +5,11 @@ import './NotFound.css'
 const NotFound = () => {
 
   return (
-    <div className="notFound">
-      <h1> 404 Not Found </h1>
-      <Link to="/" className="arrowBack"><IoArrowBack/></Link>
+    <div className="containerNotFound">
+      <div className="notFound">
+        <h1> 404 Not Found </h1>
+        <Link to="/" className="arrowBack"><IoArrowBack/></Link>
+      </div>
     </div>
   )
 }

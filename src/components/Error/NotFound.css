@@ -1,3 +1,7 @@
+.containerNotFound {
+        height: 35vh;
+}
+
 .notFound {
         display: flex;
         color: whitesmoke;
@@ -15,4 +19,8 @@
         background-color: #a7946c;
         border-radius: 4rem;
         width: 3%;
+}
+
+.arrowBack:hover {
+        opacity: 80%;
 }

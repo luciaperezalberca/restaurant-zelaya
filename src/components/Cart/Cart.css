@@ -13,6 +13,10 @@
         font-size: 0.9rem;
 }
 
+.checkout:hover {
+        opacity: 70%;
+}
+
 .vaciarCarrito {
         background: none;
         border: none;
@@ -22,12 +26,20 @@
         letter-spacing: 0.1rem;
 }
 
+.vaciarCarrito:hover {
+        text-decoration: underline #a7946c;
+}
+
 .totalCart {
         text-align: center;
         font-size: 1.2rem;
         margin: 2rem;
         color: #a7946c;
         margin-top: 3rem;
+}
+
+.containerEmptyCart {
+        height: 35vh;
 }
 
 .emptyCart {
@@ -42,4 +54,8 @@
 
 .textBack {
         color: #a7946c;
+}
+
+.textBack:hover {
+        opacity: 70%;
 }

@@ -9,6 +9,10 @@
         margin-left: 2rem;
 }
 
+.iconCart:hover{
+        opacity: 70%;
+}
+
 .NumberCart{
         font-size: 1rem;
 }
