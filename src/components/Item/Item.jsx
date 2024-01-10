@@ -18,7 +18,7 @@ const Item = ({id, name, img, price, stock, description}) => {
                                         Precio: ${price}
                                 </p>
                                 <p className='InfoStock'>
-                                        Stock disponible: {stock} unidades
+                                        Stock: {stock} unidades
                                 </p>
                         </section>
                         <footer className='ItemFooter'>

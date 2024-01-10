@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app"
 import { getFirestore } from "firebase/firestore"
 
 const firebaseConfig = {
-  apiKey: "AIzaSyACUY6kjmoBj479-PfX6Rvshl4Fh6eeigA",
-  authDomain: "restaurant-zelaya.firebaseapp.com",
-  projectId: "restaurant-zelaya",
-  storageBucket: "restaurant-zelaya.appspot.com",
-  messagingSenderId: "927410842599",
-  appId: "1:927410842599:web:34d44de1b68adf90606b42"
+  apiKey: import.meta.env.VITE_REACT_APP_apiKey,
+  authDomain: import.meta.env.VITE_REACT_APP_authDomain,
+  projectId: import.meta.env.VITE_REACT_APP_projectId,
+  storageBucket: import.meta.env.VITE_REACT_APP_storageBucket,
+  messagingSenderId: import.meta.env.VITE_REACT_APP_messagingSenderId,
+  appId: import.meta.env.VITE_REACT_APP_appId
 }
 
 // Initialize Firebase
