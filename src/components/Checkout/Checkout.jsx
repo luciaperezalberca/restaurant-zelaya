@@ -5,6 +5,7 @@ import { CartContext } from '../Context/CartContext'
 import { Timestamp, collection, documentId, getDocs, query, where, addDoc, writeBatch } from 'firebase/firestore'
 import './Checkout.css'
 import NotFound from '../Error/NotFound'
+import { Link } from 'react-router-dom'
 
 const Checkout = () => {
         const [loading, setLoading] = useState(false)
@@ -78,7 +79,9 @@ const Checkout = () => {
         if (orderId) {
                 return (
                         <div className='containerOrder'>
-                                <h1 className='titleCheckout'> El Id de su orden es: {orderId} </h1>
+                                <h1 className='titleCheckout'> Gracias por su pedido </h1>
+                                <p className='titleCheckoutOrder'> El Id de su orden es: {orderId} </p>
+                                <Link to='/' className='textBack'> Volver al Menu </Link>
                         </div>
                 )
         }

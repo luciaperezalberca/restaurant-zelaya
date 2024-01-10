@@ -4,6 +4,7 @@ import { db } from "../../firebase/Config"
 import { useParams } from 'react-router-dom'
 import ItemList from '../ItemList/ItemList'
 import './ItemListContainer.css'
+import Loading from '../Loading/Loading'
 
 const ItemListContainer = ({ greeting }) => {
         
@@ -37,7 +38,7 @@ const ItemListContainer = ({ greeting }) => {
         return (
                 <div>
                         <h1 className="greetingStyle"> {greeting} </h1>
-                        <ItemList items={items}/>
+                        {loading ? <Loading/> : <ItemList items={items}/>}
                 </div>
         )
 }

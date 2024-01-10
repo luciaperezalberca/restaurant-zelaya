@@ -1,12 +1,23 @@
-.titleCheckout {
+.titleCheckoutOrder {
         text-align: center;
         color: whitesmoke;
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         letter-spacing: 0.1rem;
-        font-weight: 400;
-        margin-top: 2rem;
+}
+
+.titleCheckout {
+        color: #a7946c;
 }
 
 .containerOrder {
-        height: 35vh;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 3rem;
+}
+
+.textBack {
+        margin-bottom: 2rem;
 }
