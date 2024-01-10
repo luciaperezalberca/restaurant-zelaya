@@ -2,12 +2,14 @@ import { useContext, useState } from 'react'
 import { db } from '../../firebase/Config'
 import CheckoutForm from '../CheckoutForm/CheckoutForm'
 import { CartContext } from '../Context/CartContext'
-import { collection, documentId, getDocs, query, where, addDoc, writeBatch } from 'firebase/firestore'
+import { Timestamp, collection, documentId, getDocs, query, where, addDoc, writeBatch } from 'firebase/firestore'
 import './Checkout.css'
+import NotFound from '../Error/NotFound'
 
 const Checkout = () => {
         const [loading, setLoading] = useState(false)
         const [orderId, setOrderId] = useState('')
+        const [error, setError] = useState(null);
 
         const { cart, totalPrice, clearCart } = useContext(CartContext)
  
@@ -21,6 +23,7 @@ const Checkout = () => {
                                 },
                                 items: cart,
                                 total: totalPrice(),
+                                date: Timestamp.fromDate(new Date())
                         }
 
                         const batch = writeBatch(db)
@@ -53,20 +56,35 @@ const Checkout = () => {
                                 setOrderId(orderAdded.id)
                                 clearCart()
                         } else {
-                                console.log('Hay productos que estan fuera de stock')
+                                const errorMessage = "Algunos productos están fuera de stock"
+                                setError(errorMessage)
                         }
 
                 } catch (error) {
-                        console.log(error)
+                        setError(error)
+                } finally {
+                        setLoading(false)
                 }
         }
 
         if (loading) {
                 return (
                         <div className='containerOrder'>
+                                <h1 className='titleCheckout'> Se esta generando su orden... </h1>
+                        </div>
+                )
+        }
+
+        if (orderId) {
+                return (
+                        <div className='containerOrder'>
                                 <h1 className='titleCheckout'> El Id de su orden es: {orderId} </h1>
                         </div>
                 )
+        }
+
+        if (error) {
+                return <NotFound/>
         }
 
         return (
