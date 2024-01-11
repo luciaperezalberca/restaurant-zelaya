@@ -1,8 +1,12 @@
-# React + Vite
+# ZELAYA restaurant.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción del proyecto.
+El objetivo de este proyecto fue crear una página web para un restaurant llamado "Zelaya". En la misma podrán visualizar la carta completa del establecimiento, o ver los platos por categorías. Dentro del detalle de cada plato podrán encontrar su descripción detallada y sumarlos a su orden de pedido. Una vez finalizada la selección de productos, podrán generar la orden de pedido mediante nombre, teléfono y email. Los pedidos se almacenarán con fecha y hora en una base de datos (Firestore) con un ID de pedido. 
 
-Currently, two official plugins are available:
+### Instalación del proyecto.
+El mismo fue realizado mediante React Vite.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+La App fue creada mediante el comando:
+npm create vite@latest y configurada con React, Javascript. 
+
+Se utilizó para la base de datos Firestore y el Storage de Firebase para el almacenamiento remoto de las imagenes. 
