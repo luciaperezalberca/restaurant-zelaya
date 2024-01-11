@@ -13,12 +13,11 @@
         border-radius: 2rem;
         color: #a7946c;
         font-weight: bold;
-        font-size: 1rem;
+        font-size: 2.2rem;
         margin-bottom: 1rem;
 }
 
 .Counter .Controls .Button:hover{
-        background-color: #242424;
         cursor: pointer;
 }
 
@@ -27,7 +26,8 @@
         padding: 0.8rem 1.5rem;
         border: none;
         letter-spacing: 0.1rem;
-        color: whitesmoke;
+        color: #F5F5DC;
+        font-size: 1.1rem;
 }
 
 .ButtonAdd:hover{

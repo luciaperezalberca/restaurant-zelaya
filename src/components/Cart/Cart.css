@@ -9,8 +9,8 @@
         background-color: #a7946cdd;
         padding: 1rem 1.5rem;
         letter-spacing: 0.1rem;
-        color: whitesmoke;
-        font-size: 0.9rem;
+        color: #F5F5DC;
+        font-size: 1.1rem;
 }
 
 .checkout:hover {
@@ -20,8 +20,8 @@
 .vaciarCarrito {
         background: none;
         border: none;
-        color: white;
-        font-size: 0.9rem;
+        color: #F5F5DC;
+        font-size: 1.2rem;
         cursor: pointer;
         letter-spacing: 0.1rem;
 }
@@ -32,7 +32,7 @@
 
 .totalCart {
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         margin: 2rem;
         color: #a7946c;
         margin-top: 3rem;
@@ -47,7 +47,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        color: whitesmoke;
+        color: #F5F5DC;
         margin-top: 3rem;
         gap: 3rem;
 }

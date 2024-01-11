@@ -1,5 +1,5 @@
 .iconCart {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
         color: #a7946c;
         display: flex;
         justify-content: center;
@@ -14,5 +14,6 @@
 }
 
 .NumberCart{
-        font-size: 1rem;
+        font-size: 1.8rem;
+        font-weight: 600;
 }

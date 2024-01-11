@@ -12,10 +12,10 @@ const NavBar = () => {
                                 </figure>
                         </Link>
                         <div className="Categories">
-                                <NavLink to={`/category/entradas`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}> Entradas </NavLink>
-                                <NavLink to={`/category/principales`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}> Principales </NavLink>
-                                <NavLink to={`/category/postres`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}> Postres </NavLink>
-                                <NavLink to={`/category/tragos`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}> Tragos </NavLink>
+                                <NavLink to={`/category/entradas`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}> ENTRADAS </NavLink>
+                                <NavLink to={`/category/principales`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}> PRINCIPALES </NavLink>
+                                <NavLink to={`/category/postres`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}> POSTRES </NavLink>
+                                <NavLink to={`/category/tragos`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}> TRAGOS </NavLink>
                         </div>
                         <div className="Cart">
                                 <CartWidget />

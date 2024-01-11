@@ -4,7 +4,7 @@
 
 .notFound {
         display: flex;
-        color: whitesmoke;
+        color: #F5F5DC;
         text-align: center;
         justify-content: center;
         gap: 4rem;

@@ -8,6 +8,9 @@
 .HeaderCardDetail{
         margin-bottom: 2rem;
         color: #a7946c;
+        font-size: 0.9rem;
+        letter-spacing: 0.2rem;
+        text-transform: uppercase;
 }
 
 .CardItemDetail picture{
@@ -17,7 +20,7 @@
 }
 
 .ItemImgDetail{
-        width: 50%;
+        width: 70%;
         border-radius: 0.5rem;
 }
 
@@ -35,11 +38,12 @@
         width: 60%;
         text-align: center;
         color: #a7946c;
+        font-size: 1.4rem;
 }
 
 .InfoCategoryDetail{
-        color: whitesmoke;
-        font-size: 0.9rem;
+        color: #F5F5DC;
+        font-size: 1.3rem;
         margin-top: 1rem;
 }
 
@@ -48,8 +52,8 @@
         padding: 0.8rem 1.5rem;
         border: none;
         letter-spacing: 0.1rem;
-        color: whitesmoke;
-        font-size: 0.9rem;
+        color: #F5F5DC;
+        font-size: 1.1rem;
 }
 
 .buttonOrder:hover {

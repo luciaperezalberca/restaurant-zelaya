@@ -1,13 +1,15 @@
 .titleCheckoutOrder {
         text-align: center;
-        color: whitesmoke;
-        font-size: 1.3rem;
+        color: #F5F5DC;
+        font-size: 1.8rem;
         letter-spacing: 0.1rem;
 }
 
 .titleCheckout {
         color: #a7946c;
         text-align: center;
+        text-transform: uppercase;
+        font-size: 1.7rem;
 }
 
 .containerOrder {
@@ -21,4 +23,5 @@
 
 .textBack {
         margin-bottom: 2rem;
+        font-size: 1.4rem;
 }

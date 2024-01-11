@@ -1,8 +1,8 @@
 .containerLoading {
         height: 40vh;
-        margin-top: 8rem;
+        margin-top: 10rem;
         text-align: center;
-        color: whitesmoke;
+        color: #F5F5DC;
 }
     
 .titleLoading {
