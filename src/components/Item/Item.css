@@ -9,7 +9,6 @@
 .ItemHeader{
         color: #a7946c;
         text-align: center;
-        font-weight: 200;
         font-size: 1.3rem;
         letter-spacing: 0.2rem;
         margin-bottom: 1rem;
@@ -37,12 +36,12 @@
 }
 
 .SeeDetails{
-        background-color: #a7946c;
+        background-color: #121212;
         padding: 0.8rem 1.5rem;
         font-size: 0.9rem;
         letter-spacing: 0.1rem;
 }
 
 .SeeDetails:hover {
-        opacity: 80%;
+        background-color: #242424;
 }

@@ -1,11 +1,12 @@
 .Footer {
-        background-color: #a7946c27;
+        background-color: #121212;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 30rem;
         padding: 2rem;
         width: 100%;
+        border-top: 1px solid #a7946c;
 }
 
 .adress{
