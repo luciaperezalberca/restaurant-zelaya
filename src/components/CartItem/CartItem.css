@@ -1,22 +1,27 @@
 .nameCartItem {
         font-weight: 400;
         color: #a7946c;
-        margin-right: 2rem;
         font-size: 1.2rem;
         text-transform: uppercase;
         letter-spacing: 0.1rem;
         font-weight: 600;
+        padding: 0.5rem 2rem;
+        text-align: center;
 }
 
 .CartItem {
         background-color: #121212;
         padding: 1rem;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 3rem;
+        gap: 0.5rem;
         color: #F5F5DC;
         font-size: 1.4rem;
+        border-top: 1px solid #a7946c;
+        padding-top: 1.5rem;
+        padding-bottom: 1.8rem;
 }
 
 .iconRemove {
@@ -29,8 +34,21 @@
         width: 6rem;
         color: #a7946c;
         cursor: pointer;
+        margin-top: 1rem;
 }
 
 .iconRemove:hover {
         opacity: 70%;
+}
+
+@media screen and (min-width: 1024px) {
+       .CartItem {
+                flex-direction: row;
+                gap: 2rem;
+                text-align: center;
+       }
+
+       .nameCartItem {
+                font-size: 1rem;
+       }
 }

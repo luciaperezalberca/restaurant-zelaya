@@ -1,6 +1,21 @@
 .items{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 5rem;
-        margin: 4rem 10rem;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin: 3rem 4rem;
+}
+
+@media screen and (min-width: 600px) {
+        .items {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 3rem;
+        }
+}
+
+@media screen and (min-width: 1024px) {
+        .items {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 4rem;
+                margin: 3rem 8rem;
+        }
 }

@@ -1,38 +1,108 @@
 .NavBar {
-        padding: 2rem;
-        line-height: 3rem;
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-around;
+        padding: 1rem;
+        background-color: #171717;
+}
+     
+.containerLogo {
+        max-width: 30%;
 }
 
-.logo{
-        width: 60%;
+.logo {
+        width: 100%;
 }
 
 .logo:hover {
         opacity: 70%;
 }
-
-.Categories{
-        width: 100%;
+      
+.MenuButton {
+        background: transparent;
+        border: none;
+}
+      
+.MenuIcon {
         display: flex;
-        justify-content: end;
+        justify-content: center;
         align-items: center;
-        gap: 3rem;
-        font-size: 1.1rem;
-        letter-spacing: 0.2rem;
+        background-color: transparent;
+        border: none;
+        margin-right: 1.5rem;
+}
+
+.icon {
+        font-size: 1.4rem;
+        color: #F5F5DC ;
+}
+
+.icon:hover {
+        cursor: pointer;
+        opacity: 60%;
+}
+      
+.Categories {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 0.8rem;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        letter-spacing: 0.1rem;
         font-weight: 600;
+        font-size: 0.9rem;
 }
-
-.Categories a:hover{
-        border-bottom: 1px solid #a7946cba;
+      
+.Categories.open {
+        max-height: 20%;
 }
-
-.ActiveOption {
+      
+.Option {
+        padding: 0.3rem;
+        border: none;
+}
+      
+.Option:hover {
         border-bottom: 1px solid #a7946c;
 }
 
-.Option {
-        border: none;
+.ActiveOption {
+        color: #a7946c;
+}
+
+@media screen and (min-width: 600px) {
+        .logo {
+                width: 85%;
+        }
+}
+
+@media screen and (min-width: 1024px) {
+        .containerLogo {
+                max-width: 20%;
+        }
+
+        .logo {
+                width: 80%;
+        }
+        
+        .MenuButton {
+                display: none;
+        }
+
+        .Categories {
+                max-height: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                gap: 1.5rem;
+                font-size: 1rem;
+        }
+
+        .ActiveOption {
+                border-bottom: 0.35rem solid #171717;
+                color: #a7946c;
+        }
 }

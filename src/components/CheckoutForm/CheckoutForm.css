@@ -6,7 +6,7 @@
         align-items: center;
         gap: 2rem;
         padding: 2rem;
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
 }
 
 .labelCheckout {
@@ -16,7 +16,8 @@
         gap: 1rem;
         color: #F5F5DC;
         letter-spacing: 0.1rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
+        text-align: center;
 }
 
 .inputCheckout {
@@ -27,12 +28,11 @@
         text-align: center;
         font-size: 1.1rem;
         letter-spacing: 0.1rem;
-        width: 15rem;
         border-radius: 0.5rem;
 }
 
 .inputCheckout::placeholder {
-        opacity: 50%;
+        opacity: 70%;
         font-size: 1rem;
 }
 
@@ -46,7 +46,7 @@
         background-color: #a7946c;
         color: #F5F5DC;
         letter-spacing: 0.1rem;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         margin-top: 1rem;
 }
 
@@ -54,3 +54,15 @@
         opacity: 70%;
         cursor: pointer;
 }
+
+@media screen and (min-width: 600px) {
+        .labelCheckout {
+                font-size: 1.2rem;
+        }
+ }
+ 
+ @media screen and (min-width: 1024px) {
+        .labelCheckout {
+                font-size: 1.4rem;
+        }
+ }

@@ -1,12 +1,10 @@
 .iconCart {
-        font-size: 2.2rem;
+        font-size: 1.5rem;
         color: #a7946c;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 0.5rem;
-        width: 6rem;
-        margin-left: 2rem;
+        gap: 0.4rem;
 }
 
 .iconCart:hover{
@@ -14,6 +12,13 @@
 }
 
 .NumberCart{
-        font-size: 1.8rem;
+        font-size: 1.3rem;
         font-weight: 600;
+        margin-right: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+        .iconCart {
+                font-size: 2rem;
+        }
 }

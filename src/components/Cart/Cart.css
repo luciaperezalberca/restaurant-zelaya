@@ -11,6 +11,7 @@
         letter-spacing: 0.1rem;
         color: #F5F5DC;
         font-size: 1.1rem;
+        text-align: center;
 }
 
 .checkout:hover {
@@ -39,7 +40,7 @@
 }
 
 .containerEmptyCart {
-        height: 35vh;
+        height: 50vh;
 }
 
 .emptyCart {
@@ -50,6 +51,9 @@
         color: #F5F5DC;
         margin-top: 3rem;
         gap: 3rem;
+        text-align: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
 }
 
 .textBack {

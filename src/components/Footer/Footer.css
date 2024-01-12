@@ -3,7 +3,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 30rem;
         padding: 2rem;
         width: 100%;
         border-top: 1px solid #a7946c;
@@ -14,11 +13,33 @@
         line-height: 2rem;
         color: #a7946c;
         letter-spacing: 0.1rem;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
 }
 
 .socialMedia {
-        font-size: 1.5rem;
-        letter-spacing: 1.2rem;
+        font-size: 1.3rem;
+        letter-spacing: 1rem;
         color: #F5F5DC;
+        margin-left: 3rem;
+        text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+        .Footer {
+                gap: 4rem;
+        }
+}
+
+@media screen and (min-width: 1024px) {
+        .Footer {
+                gap: 10rem;
+        }
+
+        .adress {
+                font-size: 1.3rem;
+        }
+
+        .socialMedia {
+                font-size: 1.5rem;
+        }
 }
