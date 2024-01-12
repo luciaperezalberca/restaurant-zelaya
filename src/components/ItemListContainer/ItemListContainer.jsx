@@ -25,6 +25,8 @@ const ItemListContainer = ({ greeting }) => {
                                         const data = doc.data()
                                         return { id: doc.id, ...data}
                                 })
+
+                                itemAdapted.sort((a, b) => a.category.localeCompare(b.category))
                                 setItems(itemAdapted)
                         })
                         .catch(error => {
