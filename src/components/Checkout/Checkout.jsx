@@ -80,7 +80,7 @@ const Checkout = () => {
                 return (
                         <div className='containerOrder'>
                                 <h1 className='titleCheckout'> Gracias por su pedido </h1>
-                                <p className='titleCheckoutOrder'> El Id de su orden es: {orderId} </p>
+                                <p className='titleCheckoutOrder'> El Id de su orden es: {orderId}. <br/> Nos contactaremos a la brevedad.</p>
                                 <Link to='/' className='textBack'> Volver al Menu </Link>
                         </div>
                 )
