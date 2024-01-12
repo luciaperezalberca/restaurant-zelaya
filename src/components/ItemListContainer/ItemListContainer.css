@@ -3,9 +3,22 @@
         color: #F5F5DC;
         font-weight: 400;
         letter-spacing: 0.1rem;
-        font-size: 1.8rem;
+        font-size: 1rem;
         background-color: #121212;
-        padding: 1rem;
+        padding: 1rem 2rem;
         margin-bottom: 2rem;
         border-bottom: 1px solid #a7946c;
+        text-transform: uppercase;
+}
+
+@media screen and (min-width: 600px) {
+        .greetingStyle{
+                font-size: 1.3rem;
+        }
+}
+
+@media screen and (min-width: 1024px) {
+        .greetingStyle{
+                font-size: 1.5rem;
+        }
 }

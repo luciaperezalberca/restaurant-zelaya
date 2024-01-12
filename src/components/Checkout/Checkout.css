@@ -1,27 +1,52 @@
 .titleCheckoutOrder {
         text-align: center;
         color: #F5F5DC;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         letter-spacing: 0.1rem;
+        padding: 0rem 1rem;
 }
 
 .titleCheckout {
         color: #a7946c;
         text-align: center;
         text-transform: uppercase;
-        font-size: 1.7rem;
+        font-size: 1.2rem;
+        margin-top: 1rem;
 }
 
 .containerOrder {
-        height: 40vh;
+        height: 60vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
         gap: 3rem;
+        padding: 2rem;
 }
 
 .textBack {
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
         font-size: 1.4rem;
+}
+
+@media screen and (min-width: 600px) {
+       .titleCheckout {
+                font-size: 1.5rem;
+       }
+
+       .titleCheckoutOrder {
+                font-size: 1.8rem;
+                padding: 0rem 1rem;
+       }
+}
+
+@media screen and (min-width: 1024px) {
+        .titleCheckout {
+                font-size: 1.9rem;
+        }
+
+        .titleCheckoutOrder {
+                font-size: 2rem;
+                padding: 0rem;
+        }
 }

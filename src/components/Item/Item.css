@@ -49,3 +49,24 @@
 .SeeDetails:hover {
         background-color: #242424;
 }
+
+@media screen and (min-width: 600px) {
+        .CardItem {
+                margin-bottom: 2rem;
+        }
+
+        .ItemName {
+                font-size: 1rem;
+        }
+}
+
+@media screen and (min-width: 1024px) {
+        .CardItem {
+                margin-bottom: 1.5rem;
+        }
+
+        .ItemName {
+                font-size: 1.2rem;
+                margin-bottom: 2rem;
+        }
+}

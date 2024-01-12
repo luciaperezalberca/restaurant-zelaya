@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 import './Footer.css'
 import { SiInstagram } from "react-icons/si"
-import { BsFacebook } from "react-icons/bs";
-import { SiWhatsapp } from "react-icons/si";
+import { BsFacebook } from "react-icons/bs"
+import { SiWhatsapp } from "react-icons/si"
 
 const Footer = () => {
         return (

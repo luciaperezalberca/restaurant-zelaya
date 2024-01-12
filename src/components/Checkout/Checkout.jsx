@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 const Checkout = () => {
         const [loading, setLoading] = useState(false)
         const [orderId, setOrderId] = useState('')
-        const [error, setError] = useState(null);
+        const [error, setError] = useState(null)
 
         const { cart, totalPrice, clearCart } = useContext(CartContext)
  

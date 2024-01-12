@@ -8,9 +8,11 @@
 .HeaderCardDetail{
         margin-bottom: 2rem;
         color: #a7946c;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         letter-spacing: 0.2rem;
         text-transform: uppercase;
+        text-align: center;
+        padding: 1rem 2rem 0rem 2rem;
 }
 
 .CardItemDetail picture{
@@ -38,7 +40,7 @@
         width: 60%;
         text-align: center;
         color: #a7946c;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
 }
 
 .InfoCategoryDetail{
@@ -58,4 +60,10 @@
 
 .buttonOrder:hover {
         background-color: #242424;
+}
+
+@media screen and (min-width: 600px) {
+        .HeaderCardDetail{
+                font-size: 1rem;
+        }
 }
